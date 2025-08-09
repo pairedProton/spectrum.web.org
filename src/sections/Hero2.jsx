@@ -7,7 +7,7 @@ const Hero2 = () => {
   return (
     <div className="w-full h-screen relative">
       <Navbar ></Navbar>
-     <img  className="w-full h-full object-center object-cover" src={heroImg} alt="" />
+     <img  className="w-full h-full    lg:object-center object-bottom object-cover" src={heroImg} alt="" />
     </div>
   );
 };

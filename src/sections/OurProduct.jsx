@@ -32,9 +32,9 @@ const products =[
 
 const OurProduct = () => {
   return (
-    <section className="w-full h-screen flex flex-col gap-6 p-10 bg-[#F5E1C9]">
+    <section className="w-full min-h-screen flex flex-col gap-6 p-10 bg-[#F5E1C9]">
         <h2 className="text-6xl font-[curvyText] text-[#50653e]" >Our Core Operations</h2>
-        <div className="flex justify-around gap-10 " >
+        <div className="flex  flex-col lg:flex-row gap-4 justify-around gap-10 " >
             {
                 products.map((e,i)=>(
                     <Product img={e.img} name={e.name} desc={e.desc} key={i} />

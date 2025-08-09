@@ -3,7 +3,7 @@ import ceoImage from "../assets/images/ceo.webp";
 
 const CeoSection = () => {
   return (
-    <section className="w-full h-screen bg-[#D4DBB1] p-10 flex gap-4">
+    <section className="w-full min-h-screen lg:h-screen bg-[#D4DBB1] p-10 flex  flex-col lg:flex-row gap-4">
       <section className="leftCeoSec relative  flex-1">
         <img
           className="w-full h-full object-contain object-center"
@@ -22,7 +22,7 @@ const CeoSection = () => {
       </section>
       <section className="rightCeoSec  flex flex-col flex-1 font-[curvyText] gap-6  items-center p-2 text-[#50653e] ">
         <hr className="w-full h-px bg-[#50653e]" />
-        <h2 className="self-start text-7xl ">
+        <h2 className="self-start text-5xl lg:text-7xl ">
           A <span className="italic">message</span> from <br /> Our CEO
         </h2>
         <h3 className=" text-lg">

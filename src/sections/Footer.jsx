@@ -1,10 +1,12 @@
 import React from "react";
 import footer from "../assets/images/footer.png";
 import { Link } from "react-router-dom";
+import footertext from '../assets/images/footertext.svg'
+
 
 const Footer = () => {
   return (
-    <div className="w-full h-[50vh] bg-[#50653e] p-10 text-white flex gap-6 relative flex-col justify-start items-end overflow-hidden">
+    <div className="w-full h-[50vh] bg-[#50653e] p-10 pb-0 text-white flex gap-6 relative flex-col justify-start items-end overflow-hidden ">
       <div className="w-full h-fit flex gap-6">
         <h2 className="text-4xl font-[curvyText] text-[]">
           Lets Go from <span className="text-zinc-400">Grey</span> to{" "}
@@ -18,7 +20,7 @@ const Footer = () => {
         <Link  className="italic font-[semibold] cursor-pointer" to={'/business-terms'} >Business Terms</Link>
         
       </ul>
-     <h2 className="absolute z-10 top-[35%] text-[15vw]  self-end mt-5  font-black text-[#D4DBB1] " >SPECTRUM</h2>
+     <img className="w-full h-auto absolute left-0 bottom-0 object-contain"  src={footertext} alt="" />
     </div>
   );
 };

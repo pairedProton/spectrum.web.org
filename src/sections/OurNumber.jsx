@@ -1,4 +1,4 @@
-import React from "react";
+
 import hero5 from "../assets/images/hero5.jpg";
 import Numbers from "../components/Numbers";
 
@@ -16,12 +16,12 @@ const numbers = [
 
 const OurNumber = () => {
   return (
-    <div className={`w-full h-screen flex p-10 relative `}  style={{ backgroundImage: `url(${hero5})`,backgroundPosition:'left' }}>
-      <div className="leftNumber w-[50%] text-6xl font-[curvyText] text-white">
+    <div className={`w-full h-auto lg:h-screen flex flex-col lg:flex-row gap-6 lg:gap-0 p-10 relative `}  style={{ backgroundImage: `url(${hero5})`,backgroundPosition:'left' }}>
+      <div className="leftNumber w-full  lg:w-[50%] text-6xl font-[curvyText] text-white">
         Our Target <br />
         till <span className="italic">2030</span>
       </div>
-      <div className="rightNumber w-[50%] flex flex-wrap gap-10  justify-center items-center p-4 backdrop-blur-md rounded-lg">
+      <div className="rightNumber w-full  lg:w-[50%]  flex flex-col md:flex-row flex-wrap gap-10  justify-center items-center p-4 backdrop-blur-md rounded-lg">
         {numbers.map((e, i) => (
           <Numbers num={e.num} text={e.text} key={i}></Numbers>
         ))}
