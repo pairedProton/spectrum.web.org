@@ -1,14 +1,10 @@
 import React from 'react'
-import Hero from './sections/Hero'
-import Navbar from './components/Navbar'
-import CeoSection from './sections/CeoSection'
+import Routing from './utils/Routing'
 
 const App = () => {
   return (
     <div className='w-full h-full flex flex-col ' >
-      <Navbar></Navbar>
-      <Hero></Hero>
-      <CeoSection></CeoSection>
+      <Routing></Routing>
     </div>
   )
 }

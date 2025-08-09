@@ -1,12 +1,12 @@
 import React from "react";
-import ceoImage from "../assets/images/ceo.png";
+import ceoImage from "../assets/images/ceo.webp";
 
 const CeoSection = () => {
   return (
-    <section className="w-full min-h-screen h-auto bg-[#D4DBB1] p-10 flex gap-4">
+    <section className="w-full h-screen bg-[#D4DBB1] p-10 flex gap-4">
       <section className="leftCeoSec relative  flex-1">
         <img
-          className="w-full h-auto object-cover object-center"
+          className="w-full h-full object-contain object-center"
           src={ceoImage}
           alt=""
         />
@@ -26,16 +26,7 @@ const CeoSection = () => {
           A <span className="italic">message</span> from <br /> Our CEO
         </h2>
         <h3 className=" text-lg">
-          Annual reports usually start with brief messages from the company’s
-          leadership team. Their personal take on the year that was can set the
-          stage for the highlights, data and plans described in the rest of the
-          report.
-        </h3>
-        <h3 className=" text-lg">
-          Annual reports usually start with brief messages from the company’s
-          leadership team. Their personal take on the year that was can set the
-          stage for the highlights, data and plans described in the rest of the
-          report.
+          "At Spectrum Marketing and Services, we believe that sustainable agriculture is the key to a better tomorrow. From humble beginnings to becoming a catalyst for rural empowerment, our mission is simple—support the hands that feed the nation.Together, let’s cultivate a future where every farmer thrives."
         </h3>
       </section>
     </section>

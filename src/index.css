@@ -3,25 +3,27 @@
 :root{
   --lightGreen:#D4DBB1
   --darkGreen:#50653e
+  --lightPink:#F5E1C9
+  --darkPink:#E68F5C
 }
 
 @font-face {
   font-family: curvyText;
-  src: url('./assets//fonts/TT\ Ramillas\ Trial\ Medium.ttf');
+  src: url('./assets//fonts/TT\ Ramillas\ Trial\ Medium.woff2');
 }
 @font-face {
   font-family: curvyTextLight;
-  src: url('./assets/fonts/TT\ Ramillas\ Trial\ Light.ttf');
+  src: url('./assets/fonts/TT\ Ramillas\ Trial\ Light.woff2');
 }
 
 @font-face {
   font-family: curvyTextLightItalic;
-  src: url('./assets/fonts/TT\ Ramillas\ Trial\ Light\ Italic.ttf');
+  src: url('./assets/fonts/TT\ Ramillas\ Trial\ Light\ Italic.woff2');
 }
 
 
 @font-face {
   font-family: curvyTextItalic;
-  src: url('./assets/fonts/TT\ Ramillas\ Trial\ Medium\ Italic.ttf');
+  src: url('./assets/fonts/TT\ Ramillas\ Trial\ Medium\ Italic.woff2');
 }
 
