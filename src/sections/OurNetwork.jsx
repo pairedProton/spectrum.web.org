@@ -15,7 +15,7 @@ const OurNetwork = () => {
         </p>
       </div>
       <img
-        className="w-[80%] lg:w-[50%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  h-auto object-center object-cover"
+        className="w-[80%] lg:w-[30%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  h-auto object-center object-cover"
         src={odisha}
         alt=""
       />

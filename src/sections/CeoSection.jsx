@@ -6,13 +6,13 @@ const CeoSection = () => {
     <section className="w-full min-h-screen lg:h-screen bg-[#D4DBB1] p-10 flex  flex-col lg:flex-row gap-4">
       <section className="leftCeoSec relative  flex-1">
         <img
-          className="w-full h-full object-contain object-center"
+          className="w-full h-full object-contain object-center"a
           src={ceoImage}
           alt=""
         />
         <div className="absolute -bottom-5 -right-2 w-55 h-30 bg-[#e68f5c] flex flex-col gap-2 items-start p-4 jus ">
           <h3 className="font-[curvyText] text-[#50653e] text-2xl font-semibold">
-            DK Aryabhatta
+            DK Aryabratta
           </h3>
           <h4 className="text-white font-semibold">
             Founder and CEO <br />
