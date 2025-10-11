@@ -11,7 +11,7 @@ const OurMission = () => {
       />
       <div className=" relative z-10  flex flex-col gap-4 p-10  text-white justify-center items-center  text-center backdrop-blur-md">
         <h3 className="font-[curvyText] w-full text-white text-center text-6xl ">
-          Our Mission
+          Our Mission and Vision
         </h3>
         <p className="" >
           Spectrum Marketing and Services Pvt. Ltd. is a new-age agricultural
@@ -24,6 +24,7 @@ const OurMission = () => {
           agricultural innovation.{" "}
         </p>
 
+        
         <p>
           Blending traditional wisdom with cutting-edge technology, we champion
           eco-friendly practices, zero-waste models, and tech-enabled solutions

@@ -28,3 +28,20 @@
   src: url('./assets/fonts/TT\ Ramillas\ Trial\ Medium\ Italic.woff2');
 }
 
+
+
+@theme{
+  --lightGreen:#D4DBB1
+  --darkGreen:#50653e
+  --lightPink:#F5E1C9
+  --darkPink:#E68F5C
+  --superDark:#1b3a2a
+}
+
+@layer utilities{
+  
+  .heading{
+    @apply font-[curvyText] text-5xl lg:text-6xl
+  }
+}
+
