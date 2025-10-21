@@ -39,10 +39,10 @@ const Values = () => {
 
   return (
     <div className="w-full min-h-screen relative h-auto lg:h-screen flex flex-col p-10 gap-6 bg-emerald-950">
-      <h2 className="heading text-white ">Our Core Values</h2>
+      <h2 className="heading text-center md:text-start  text-white text-7xl ">Our Core Values</h2>
       <div className="relative  h-full">
         {/* center logo */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 ">
+        <div className=" hidden md:absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 ">
           <div className="bg-emerald-950 text-white  rounded-full w-40 h-40 flex justify-center items-center text-2xl relative z-30">
             <img className="w-36 h-auto ob" src={centerlogo} alt="" />
           </div>
@@ -50,27 +50,27 @@ const Values = () => {
 
         {/* grid */}
         <div
-          className="valueGrid grid  h-full gap-6"
-          style={{
-            gridTemplateColumns: "repeat(2, 1fr)",
-            gridTemplateRows: "repeat(2, 1fr)",
-          }}
+          className="valueGrid grid  h-full gap-6 grid-cols-1 lg:grid-cols-2 grid-rows-4 lg:grid-rows-2"
+          // style={{
+          //   gridTemplateColumns: "repeat(2, 1fr)",
+          //   gridTemplateRows: "repeat(2, 1fr)",
+          // }}
         >
           {values.map((e, i) => (
             <div
               key={i}
               className={`w-full h-full shadow  flex  gap-4  bg-white rounded-xl relative overflow-hidden ${e.imgCss}`}
             >
-              <div className={` w-[40%] h-full z-5 `}>
+              <div className={` md:w-[40%] w-[0%] h-full z-5 `}>
                 <img
                   className="w-full h-full object-top object-cover"
                   src={e.imgUrl}
                   alt=""
                 />
               </div>
-              <div className="w-[60%] h-full flex flex-col justify-center items-center gap-4 p-4">
+              <div className="w-full md:w-[60%] h-full flex flex-col justify-center items-center gap-4 p-4">
                 <h3
-                  className={`text-3xl text-emerald-950 font-bold relative z-10`}
+                  className={`subheading text-emerald-950 font-bold relative z-10`}
                 >
                   {e.name}
                 </h3>

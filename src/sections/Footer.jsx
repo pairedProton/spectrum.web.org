@@ -8,9 +8,9 @@ import footertext from "../assets/images/footertext.svg";
 
 const Footer = () => {
   return (
-    <div className="w-full h-[60vh] bg-emerald-950  p-10 pb-0 text-white flex gap-6 relative flex-col justify-start items-end overflow-hidden ">
+    <div className="w-full h-[45vh] md:h-[40vh] lg:h-[55vh] bg-emerald-950 p-5 md:p-10 pb-0 text-white flex gap-6 relative flex-col justify-start items-end overflow-hidden ">
       <div className="w-full h-fit flex gap-6">
-        <h2 className="text-4xl font-[curvyText] text-[]">
+        <h2 className="heading font-[curvyText]">
           Lets Go from <span className="">Grey</span> to{" "}
           <span className="">Green</span>
         </h2>

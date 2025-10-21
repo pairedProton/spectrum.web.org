@@ -32,10 +32,10 @@ const Numbers = ({ num, text, numberAchieved ,perc,width}) => {
   return (
     <div
       ref={componentRef}
-      className="w-[40%] min-w-50 gap-5 text-white flex flex-col"
+      className="md:w-[40%] w-full min-w-50 gap-2 md:gap-5 text-white flex flex-col"
     >
       <hr className="w-full h-px bg-white" />
-      <h2 className="text-6xl font-[curvyText] text-white">{num}</h2>
+      <h2 className="subheading font-[curvyText] text-white">{num}</h2>
       <h2 className=" ">{text}</h2>
 
       <div className="w-full h-8 overflow-hidden bg-gray-200 rounded relative">

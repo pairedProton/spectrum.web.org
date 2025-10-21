@@ -42,7 +42,7 @@ const Marquee = () => {
           <span 
             key={index}
             ref={el => marqueeElements.current[index] = el}
-            className="mx-30 text-4xl font-semibold text-white uppercase tracking-wider hover:text-[#50653e] transition-colors duration-300"
+            className="mx-30 heading font-semibold text-white uppercase tracking-wider hover:text-[#50653e] transition-colors duration-300"
           >
             {brand}
           </span>

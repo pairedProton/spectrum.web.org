@@ -7,10 +7,10 @@ const About = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4 font-[curvyText]">
+          <h2 className=" heading font-bold text-gray-800 mb-4 font-[curvyText]">
             About the Company
           </h2>
-          <div className="w-24 h-1 bg-[#D4DBB1] mx-auto"></div>
+          <div className="w-24 h-1 bg-green-950 mx-auto"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -43,11 +43,11 @@ const About = () => {
 
           {/* Content Section */}
           <div className="space-y-6">
-            <h3 className="text-3xl font-bold text-gray-800 leading-tight font-[curvyTextLight] ">
+            <h3 className="subheading font-bold text-gray-800 leading-tight font-[curvyTextLight] text-center md:text-start">
               Empowering Farmers, Building Communities
             </h3>
 
-            <p className="text-lg text-gray-600 ">
+            <p className="text-lg text-gray-600  md:text-start">
               We are a new-age agricultural enterprise committed to reshaping
               the future of Indian farming. Guided by four core
               verticals—Krishi, Shuddh, Setu, and Vikas—we focus on sustainable

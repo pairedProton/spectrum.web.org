@@ -4,9 +4,9 @@ import ceoImage from "../assets/image/ceopic.jpg";
 
 const CeoSection = () => {
   return (
-    <section className="w-full min-h-screen lg:h-auto bg-[#D4DBB1] p-10 flex  flex-col lg:flex-row gap-8">
-      <section className="leftCeoSec relative p-4 flex-1 flex justify-start items-center ">
-        <div className="w-full aspect-square rounded-full overflow-hidden mb-36" >
+    <section className="w-full min-h-screen lg:h-auto bg-[#D4DBB1] p-10 flex  flex-col lg:flex-row lg:gap-8">
+      <section className="leftCeoSec relative p-4 lg:flex-1 flex justify-center lg:justify-start items-center ">
+        <div className="w-full h-auto rounded-full overflow-hidden mb-6 lg:mb-36 justify-self-center " >
         <img
           className="w-full h-full object-cover object-center"
           src={ceoImage}

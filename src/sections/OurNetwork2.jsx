@@ -77,6 +77,12 @@ const OurNetwork2 = () => {
           },
           `step${index}`
         );
+
+      //   tl.to('.Networkheadings',{
+      //     opacity:1,
+      //     duration:1,
+
+      //   })
       });
     },
     { scope: componentRef }
@@ -88,23 +94,25 @@ const OurNetwork2 = () => {
       className="w-full min-h-screen flex flex-col gap-6 bg-[#50653e] text-emerald-950 p-10 items-center relative"
     >
       <hr className="w-full h-px bg-emerald-950" />
-      <div className="w-full flex flex-col lg:flex-row justify-between ">
-        <h3 className="font-[curvyText] text-5xl lg:text-6xl w-full lg:w-[50%] ">
+      <div className=" Networkheadings w-full flex flex-col lg:flex-row justify-between mb-10">
+        <h3 className="heading font-[curvyText]  w-full lg:w-[50%] text-white">
           Our Network
         </h3>
-        <p className="lg:w-[50%] w-full text-start">
+        <p className="lg:w-[50%] w-full text-start text-white ">
           We partner with local farmers and growers to give our customers only
           the best and freshest ingredients.
         </p>
       </div>
       <div
         ref={containerRef}
-        className="mapSec flex justify-between w-full h-100"
+        className="mapSec flex flex-col lg:flex-row justify-between w-full h-100"
       >
         <div className="mapLeft relative flex-1 flex justify-center items-center h-full">
           <div className="flex justify-center items-center relative h-full">
             <img
-              className="w-auto h-full  -translate-y-10 -translate-x-2 object-center object-contain"
+              className="w-auto h-full  md:-translate-y-10 -translate-y-6 md:-translate-x-2
+              -translate-x-1
+               object-center object-contain"
               src={india}
               alt=""
             />
@@ -129,15 +137,15 @@ const OurNetwork2 = () => {
         </div>
 
         <div className="mapRight relative flex-1 flex justify-center items-center">
-          <div className="statesList flex flex-col gap-4">
+          <div className="statesList flex md:flex-col flex-wrap md:flex-nowrap gap-1 md:gap-2 ">
             {markerData.map((e, i) => (
               <li
                 key={i}
                 ref={(el) => (stateRefs.current[i] = el)}
-                className="flex w-50 h-auto gap-6 items-center transition-transform duration-300"
+                className="flex w-36 md:w-50 h-auto gap-4 md:gap-6 items-center transition-transform duration-300"
               >
-                <div className="w-5 h-5 rounded-full bg-amber-200" />
-                <h3 className="font-semibold text-md text-amber-200">
+                <div className="w-5 h-5 rounded-full bg-white" />
+                <h3 className="font-semibold text-md text-white">
                   {e.label}
                 </h3>
               </li>
