@@ -70,7 +70,7 @@ const SliderImages=[
               alt={`Hero image ${index + 1}`} 
             />
             <div className="absolute bottom-10 left-6 w-fit h-fit flex flex-col justify-center items-start gap-3 p-6 backdrop-blur-xl rounded-lg bg-green-950/30">
-              <h1 className="text-white text-3xl md:text-5xl font-bold font-[curvyText]">{image.title}</h1>
+              <h1 className="text-white text-3xl md:text-5xl  font-[curvyText]">{image.title}</h1>
               <p className="text-white text-lg">{image.description}</p>
             </div>
           </SwiperSlide>

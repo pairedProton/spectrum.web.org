@@ -7,7 +7,7 @@ const About = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className=" heading font-bold text-gray-800 mb-4 font-[curvyText]">
+          <h2 className=" heading text-gray-800 mb-4 font-[curvyText]  ">
             About the Company
           </h2>
           <div className="w-24 h-1 bg-green-950 mx-auto"></div>
@@ -43,7 +43,7 @@ const About = () => {
 
           {/* Content Section */}
           <div className="space-y-6">
-            <h3 className="subheading font-bold text-gray-800 leading-tight font-[curvyTextLight] text-center md:text-start">
+            <h3 className="subheading font-medium text-gray-800 leading-tight font-[curvyTextLight] text-center md:text-start">
               Empowering Farmers, Building Communities
             </h3>
 
@@ -67,7 +67,7 @@ const About = () => {
                 <div className="text-2xl font-bold text-emerald-950 mb-2">
                   <CountUp
                     from={0}
-                    to={10000}
+                    to={11000}
                     separator=","
                     direction="up"
                     duration={1}

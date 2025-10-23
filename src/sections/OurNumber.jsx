@@ -12,11 +12,11 @@ import Scrollbar from "../components/Scrollbar";
 
 const numbers = [
   {
-    num: "1 Lakh",
+    num: "1 Lakh+",
     text: "farmer community",
-    numberAchieved: 11000,
-    width: `w-[${percFinder(11000,100000)}]`,
-    perc: percFinder(11000,100000),
+    numberAchieved: 12000,
+    width: `w-[${percFinder(12000,100000)}]`,
+    perc: percFinder(12000,100000),
     // unit:'Lakh'
   },
   {
@@ -27,30 +27,30 @@ const numbers = [
     perc: percFinder(324,3000),
   },
   {
-    num: "15 Cr",
+    num: "10,000 Cr",
     text: "Company Valuation",
-    numberAchieved: 2,
+    numberAchieved: 1,
     width: "w-[63%]",
-    perc: percFinder(15,100),
+    perc: percFinder(100,10000),
   },
   {
-    num: "150",
-    text: "Districts of establishment",
+    num: "100",
+    text: "Unique Agricultural Center",
     numberAchieved: 7,
     width: "w-[70%]",
     perc: percFinder(10,150),
   },
   {
-    num: "10000",
+    num: "1 Million",
     text: "Acres Of Farms Lands",
-    numberAchieved: 1500,
+    numberAchieved: 2310,
     width: "w-[41%]",
-    perc: percFinder(2310,10000),
+    perc: percFinder(23100,1000000),
   },
   {
     num: "15",
     text: "Sustainable crop models",
-    numberAchieved: 8,
+    numberAchieved: 11,
     width: "w-[82%]",
     perc: percFinder(11,15),
   },

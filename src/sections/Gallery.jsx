@@ -36,7 +36,7 @@ const Gallery = () => {
     <section className="py-16 bg-gray-50 w-full">
       <div className="container mx-auto px-4 ">
         <div className="text-center mb-12">
-          <h2 className="heading font-bold text-gray-800 mb-4 font-[curvyText]">
+          <h2 className="heading font-medium text-gray-800 mb-4 font-[curvyText]  ">
             Our Gallery
           </h2>
           <div className="w-24 h-1 bg-emerald-950 mx-auto"></div>

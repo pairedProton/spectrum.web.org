@@ -40,8 +40,8 @@ const products =[
 
 const OurProduct = () => {
   return (
-    <section className="w-full min-h-screen h-screen flex flex-col  bg-[#F5E1C9] relative">
-        <h2 className="heading w-full md:w-auto absolute top-0 left-1/2 -translate-x-1/2 font-[curvyText] text-white  py-5 px-10 z-50 backdrop-blur-lg rounded-2xl" >Our Core Operations</h2>
+    <section className="w-full min-h-screen h-[150vh] lg:h-screen flex flex-col  bg-[#F5E1C9] relative">
+        <h2 className="heading w-full bg-emerald-950 lg:bg-none rounded-none md:w-auto relative lg:absolute top-0 left-1/2 -translate-x-1/2 font-[curvyText] text-white  py-5 px-10 z-50 backdrop-blur-lg lg:rounded-2xl" >Our Core Operations</h2>
         <div className="flex w-full h-full flex-col lg:flex-row justify-around  " >
             {
                 products.map((e,i)=>(

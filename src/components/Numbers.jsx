@@ -38,13 +38,18 @@ const Numbers = ({ num, text, numberAchieved ,perc,width}) => {
       <h2 className="subheading font-[curvyText] text-white">{num}</h2>
       <h2 className=" ">{text}</h2>
 
-      <div className="w-full h-8 overflow-hidden bg-gray-200 rounded relative">
-        <div
+      <div className="w-full h-8 overflow-hidden bg-gray-200 rounded relative flex   ">
+        {/* <div
           ref={progressRef}
           className={`bg-emerald-950 absolute top-0 left-0 h-full flex justify-center items-center text-xs font-medium text-blue-100 text-center p-0.5 leading-none ${width}`} style={{width:`${perc}%`}}
         >
           {`${perc}%`}
+        </div> */}
+
+        <div className={`barLeft bg-emerald-950  h-full flex justify-center items-center text-xs font-medium text-blue-100 text-center p-0.5 leading-none ${width} `}  style={{width:`${perc}%`,minWidth:'5%'}} >
+          
         </div>
+        <div className="barRight flex-1 flex  justify-center items-center text-emerald-950">{`${perc}%`}</div>
       </div>
     </div>
   );

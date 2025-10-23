@@ -2,26 +2,35 @@ import { MdWhatsapp } from "react-icons/md";
 import { CiLinkedin } from "react-icons/ci"; 
 import { AiOutlineInstagram } from "react-icons/ai"; 
 import React from "react";
-import footer from "../assets/images/footer.png";
 import { Link } from "react-router-dom";
 import footertext from "../assets/images/footertext.svg";
 
 const Footer = () => {
   return (
-    <div className="w-full h-[45vh] md:h-[40vh] lg:h-[55vh] bg-emerald-950 p-5 md:p-10 pb-0 text-white flex gap-6 relative flex-col justify-start items-end overflow-hidden ">
-      <div className="w-full h-fit flex gap-6">
-        <h2 className="heading font-[curvyText]">
+    <div className="w-full h-[60vh] md:h-[40vh] lg:h-[80vh] bg-emerald-950 p-5 md:p-10 pb-0 text-white flex gap-6 relative flex-col justify-start items-end overflow-hidden  ">
+      <div className="w-full h-fit flex gap-2 md:gap-6">
+        <h2 className="text-2xl md:text-4xl font-[curvyText]">
           Lets Go from <span className="">Grey</span> to{" "}
           <span className="">Green</span>
         </h2>
         <hr className="flex-1 h-px self-center text-[#D4DBB1]" />
       </div>
 
-      {/* middle-section for links and ligin btn */}
+      {/* middle-section for links and login btn */}
 
-      <div className="w-full h-auto  flex justify-between items-start mb-4" >
-        <Link  to={'http://spectrumms.in/erp/admin/login'} className="border-2 border-white p-2 rounded-lg text-xl px-4" >Login</Link>
-        <div className="flex flex-col gap-2 " >
+      <div className="w-full h-auto  flex justify-between items-start lg:mb-0 " >
+        <div className="leftFooterSec flex flex-col gap-2 ">
+        <Link  to={'http://spectrumms.in/erp/admin/login'} className="border-2 border-white p-2 rounded-lg text-xl px-4 w-fit mb-4 lg:mb-6" >Login</Link>
+
+        <Link to={'tel:+919114040067'} className="" >Contact: <br className="flex md:hidden" /> +91-9114040067</Link>
+        <Link to={'https://maps.app.goo.gl/dUR9MPJ4dnLviHrt8'} className="" >Address:<br className="flex md:hidden" /> Block - 2, Second Floor <br />
+        BMC Bhawani Mall St, <br /> 
+        Saheed Nagar,<br className="" />
+         Bhubaneswar,<br className="" /> Odisha 751007
+        
+        </Link>
+        </div>
+        <div className="flex flex-col gap-2 -mt-2" >
           <div className="text-xl font-[curvyText] w-full text-center" >Follow Us</div>
           <ul className="flex flex-row gap-2 text-4xl" >
             <a href="https://www.instagram.com/spectrum_pvt_ltd/"><AiOutlineInstagram /></a>
@@ -31,40 +40,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* <ul className="flex flex-col gap-2 relative z-15 self-end px-6 mb-6">
-        <li className="text-2xl  font-[curvyTextLight] text-[#D4DBB1]">
-          Socials
-        </li>
-        <a 
-          className="italic font-[semibold] cursor-pointer" 
-          href={"https://www.linkedin.com/company/106071927/admin/dashboard/"}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Linkedin
-        </a>
-        <a 
-          className="italic font-[semibold] cursor-pointer" 
-          href={"https://www.instagram.com/spectrum_pvt_ltd/"}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Instagram
-        </a>
-        
-        <a 
-          className="italic font-[semibold] cursor-pointer" 
-          href={"https://whatsapp.com/channel/0029VbBGUI360eBhHo6HH73r"}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Whatsapp
-        </a>
-      </ul> */}
-
-      {/* <div className="w-full h-auto absolute left-0 bottom-0 flex flex-col gap-4">
-        <img className=" object-contain" src={footertext} alt="" />
-      </div> */}
       <h3 className="self-start">© 2025 Spectrum All rights reserved.</h3>
       <img
         className="w-full h-auto absolute left-0 bottom-0 object-contain"

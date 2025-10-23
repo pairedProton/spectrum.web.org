@@ -42,7 +42,7 @@ const Values = () => {
       <h2 className="heading text-center md:text-start  text-white text-7xl ">Our Core Values</h2>
       <div className="relative  h-full">
         {/* center logo */}
-        <div className=" hidden md:absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 ">
+        <div className=" hidden lg:flex  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 ">
           <div className="bg-emerald-950 text-white  rounded-full w-40 h-40 flex justify-center items-center text-2xl relative z-30">
             <img className="w-36 h-auto ob" src={centerlogo} alt="" />
           </div>
@@ -59,23 +59,23 @@ const Values = () => {
           {values.map((e, i) => (
             <div
               key={i}
-              className={`w-full h-full shadow  flex  gap-4  bg-white rounded-xl relative overflow-hidden ${e.imgCss}`}
+              className={`w-full h-full shadow  flex   bg-white rounded-xl relative overflow-hidden ${e.imgCss}`}
             >
-              <div className={` md:w-[40%] w-[0%] h-full z-5 `}>
+              <div className={`hidden md:flex  w-[40%]  h-full z-5 `}>
                 <img
                   className="w-full h-full object-top object-cover"
                   src={e.imgUrl}
                   alt=""
                 />
               </div>
-              <div className="w-full md:w-[60%] h-full flex flex-col justify-center items-center gap-4 p-4">
+              <div className="w-full md:w-[60%] h-full flex flex-col justify-center items-center gap-4 p-1 md:p-4 pb-2 md:pb-0 ">
                 <h3
-                  className={`subheading text-emerald-950 font-bold relative z-10`}
+                  className={`subheading text-emerald-950 font-semibold relative z-10`}
                 >
                   {e.name}
                 </h3>
                 <h4
-                  className={`text-center relative z-10  w-[80%]`}
+                  className={`text-center relative z-10  md:w-[80%]`}
                   style={{
                     color: "#50653e",
                   }}

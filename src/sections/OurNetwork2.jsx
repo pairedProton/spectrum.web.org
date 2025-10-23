@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import india from "../assets/images/india.png";
-import marker from "../assets/images/marker2.png";
+import marker from "../assets/images/marker.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -36,9 +36,9 @@ const OurNetwork2 = () => {
         scrollTrigger: {
           trigger: componentRef.current,
           start: "top top",
-          end: `+=${markerData.length * 1000}`,
+          end: `+=${markerData.length * 200}`,
           pin: componentRef.current,
-          scrub: 5,
+          scrub: 3,
           // markers: true, // Enable for debugging
   
         },
@@ -78,11 +78,11 @@ const OurNetwork2 = () => {
           `step${index}`
         );
 
-      //   tl.to('.Networkheadings',{
-      //     opacity:1,
-      //     duration:1,
+        // tl.to('.Networkheadings',{
+        //   opacity:1,
+        //   duration:1,
 
-      //   })
+        // })
       });
     },
     { scope: componentRef }
@@ -91,7 +91,7 @@ const OurNetwork2 = () => {
   return (
     <div
       ref={componentRef}
-      className="w-full min-h-screen flex flex-col gap-6 bg-[#50653e] text-emerald-950 p-10 items-center relative"
+      className="w-full min-h-screen flex flex-col gap-6 bg-emerald-950 text-emerald-950 p-10 items-center relative"
     >
       <hr className="w-full h-px bg-emerald-950" />
       <div className=" Networkheadings w-full flex flex-col lg:flex-row justify-between mb-10">

@@ -12,15 +12,14 @@ import FarmerVid from '../sections/FarmerVid'
 import Footer from '../sections/Footer'
 import About from '../sections/About'
 import Gallery from '../sections/Gallery'
-import Marquee from '../sections/Marquee'
+import Marquee2 from '../sections/Marquee2'
+// import Marquee from '../sections/Marquee'
 import Values from '../sections/Values'
 
 
 const Home = () => {
   return (
     <div>
-      
-      
       <Hero2></Hero2>
       <About></About>
       {/* <OurMission></OurMission> */}
@@ -31,7 +30,8 @@ const Home = () => {
       {/* <OurNetwork3></OurNetwork3> */}
       <OurNumber></OurNumber>
       <OurProduct></OurProduct>
-      <Marquee/>
+      {/* <Marquee/> */}
+      <Marquee2/>
       <FarmerVid></FarmerVid>
       <Gallery></Gallery>
       <Footer></Footer>
