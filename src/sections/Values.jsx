@@ -54,7 +54,7 @@ const Values = () => {
         end: "+=500%",
         pin: true,
         scrub: 3,
-        markers: true,
+        // markers: true,
       },
     });
 
